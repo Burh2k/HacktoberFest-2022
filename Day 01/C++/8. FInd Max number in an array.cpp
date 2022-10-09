@@ -2,10 +2,12 @@
 using namespace std;
 int main(){
 
-   int n;
-   int max = 0;
-   int a[1000];
+   int n=NULL;
+   int max = NULL;
+   int a[1000];  //if user need 10 array size then 990 slots will be wasted
+   cout<<"Enter Size for your Array "<<endl;
    cin>>n;
+   int a[n];
    for(int i=0;i<n;i++){
     cin>>a[i];
    }
@@ -17,6 +19,6 @@ int main(){
    }
 
    cout<<max;
-
+return 0;
 }
 
